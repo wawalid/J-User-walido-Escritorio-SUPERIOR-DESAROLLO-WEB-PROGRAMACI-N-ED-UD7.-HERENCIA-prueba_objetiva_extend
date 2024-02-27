@@ -168,7 +168,7 @@ class Transaccion():
         return self.__ubi_destino
     
     def __str__(self):
-        return f"{self.get_ubicacion_origen} --> {self.get_ubicacion_destino} : {self.get_articulo.codigo} '{self.get_cantidad}'"
+        return f"{self.__ubi_origen.codigo} --> {self.__ubi_destino.codigo} : {self.get_articulo.codigo} '{self.get_cantidad}'"
     
 
 class Solicitud_pedido():
